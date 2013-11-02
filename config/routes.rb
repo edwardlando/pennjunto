@@ -51,7 +51,7 @@ Pennjunto::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'users#new', :as => "/hello"
-
+  
   #get 'users#create', :to => 'users#index', :as => :my_page
 
 
