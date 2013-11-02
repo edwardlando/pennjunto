@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131102191627) do
+ActiveRecord::Schema.define(:version => 20131102211603) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20131102191627) do
     t.string   "referrer"
     t.string   "question1"
     t.string   "question2"
+    t.string   "study"
   end
 
 end
