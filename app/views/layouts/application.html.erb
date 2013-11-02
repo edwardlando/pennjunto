@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pennjunto</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+<style>
+	html, body { 
+			font-family: "Palatino";
+			font-size: 16px;
+	}
+	.main_form {
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+	.field {
+		margin-top: 15px;
+	}
+	.enter {
+		height: 40px;
+		width: 60%;
+		max-width: 350px;
+		margin-bottom: 15px;
+		border: 1px solid #CCC;
+		border-radius: 3px;
+		padding: 0px 10px;
+		font-size: 22px;
+		font-family: 'Nexa Light';
+		color: #777;
+		outline-color: #777;
+	}
+
+	.btn {
+		height: 40px;
+		width: 24%;
+		min-width: 30px;
+		max-width: 350px;
+		margin-bottom: 15px;
+		border: 1px solid #CCC;
+		border-radius: 3px;
+		padding: 0px 10px;
+		font-size: 22px;
+		font-family: 'Nexa Light';
+		color: #777;
+		cursor: pointer;
+		
+	}
+
+
+
+</style>
+</html>
+

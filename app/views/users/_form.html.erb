@@ -1,0 +1,26 @@
+<%= form_for(@user) do |f| %>
+
+  <div class="field">
+    <%= f.text_field :name, :placeholder => "name", :class => "enter" %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :email, :placeholder => "upenn email", :class => "enter" %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :referrer, :placeholder => "who referred you?", :class => "enter" %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :question1, :placeholder => "something amazing about you", :class => "enter" %>
+  </div>
+
+  <div class="field">
+    <%= f.text_field :question2, :placeholder => "anything else?", :class => "enter" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Done", :class => "btn" %>
+  </div>
+<% end %>
