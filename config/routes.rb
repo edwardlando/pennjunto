@@ -54,7 +54,7 @@ Pennjunto::Application.routes.draw do
   
   #get 'users#create', :to => 'users#index', :as => :my_page
 
-
+  get '/commandcenter', :to => 'users#commandcenter'
 
   # See how all your routes lay out with "rake routes"
 
