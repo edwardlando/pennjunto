@@ -1,7 +1,26 @@
-<h1>Listing members</h1>
+<h1>Junto applicants</h1>
+
+<br/>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Referrer</th>
+    <th>Study</th>
+    <th>Amazing</th>
+    <th>Anything else</th>
+  </tr>
+
 
 <% @users.each do |user| %>
-    <%= user.name %> <br/>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.referrer %></td>
+    <td><%= user.study %></td>
+    <td><%= user.question1 %></td>
+    <td><%= user.question2 %></td>
+  </tr>
 <% end %>
-
-<br />
+</table>
