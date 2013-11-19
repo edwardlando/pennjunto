@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  
+  USER, PASSWORD = 'brothers', 'ofvirtue'
+
+  before_filter :authentication_check, :except => [:index, :show, :new, :create]
   # GET /users
   # GET /users.json
   def index
@@ -87,5 +91,12 @@ class UsersController < ApplicationController
     #   format.html # show.html.erb
     #   format.json { render json: @user }
     # end
+  end
+
+  private
+    def authentication_check
+     authenticate_or_request_with_http_basic do |user, password|
+      user == USER && password == PASSWORD
+    end
   end
 end
