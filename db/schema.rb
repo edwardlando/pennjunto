@@ -11,18 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131119001510) do
+ActiveRecord::Schema.define(:version => 20131123210331) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
     t.string   "email"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
     t.string   "referrer"
-    t.string   "question1"
-    t.string   "question2"
+    t.text     "question1",  :limit => 255
+    t.text     "question2",  :limit => 255
     t.string   "study"
-    t.string   "question3"
+    t.text     "question3",  :limit => 255
   end
 
 end
